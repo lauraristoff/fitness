@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- This website template was created by: Student's First Name Student's Last Name -->
+<!-- This website was created by: Laura Ristoff -->
 <html lang="en">
 <head>
 	<title>Forward Fitness Club</title>
@@ -9,17 +9,34 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 	<div id="container">
 
+		<!--Mobile Nav-->
+		<nav class="mobile-nav">
+
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+
+		</nav>
+
 		<!-- Use the header area for the website name or logo -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
 		</header>
 		
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
+		<!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
 			<ul>
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="about.html">About Us</a></li> 
@@ -91,6 +108,8 @@
 		</footer>
 	
 	</div>
+
+	<script src="scripts/script.js"></script>
 	
 </body>
 </html>
