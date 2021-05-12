@@ -17,13 +17,29 @@
 
 	<div id="container">
 
+        <!--Mobile Nav-->
+		<nav class="mobile-nav">
+
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+
+		</nav>
+
 		<!-- Use the header area for the website name or logo -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo" height="220" width="297"></a>
 		</header>
 		
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
+		<!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
 			<ul>
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="about.html">About Us</a></li> 
@@ -111,14 +127,15 @@
                     </tr>
                 </table>
             </div>
-			
-	    <div id="music-sample">
+
+            <div id="music-sample">
                 <h3>We play upbeat music to help keep you focused during your workout. Below is a sample of the type of music played during a class workout.</h3>
 
                 <audio controls>
                     <source src="media/ffc_audio.mp3" type="audio/mp3">
                     <source src="media/ffc_audio.ogg" type="audio/ogg">
                     <p>Your browser does not support the audio element</p>
+
                 </audio>
             </div>
 
@@ -130,7 +147,9 @@
 			<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
 		</footer>
 	
-	</div>
+    </div>
+    
+    <script src="scripts/script.js"></script>
 	
 </body>
 </html>
